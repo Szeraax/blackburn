@@ -3,8 +3,7 @@
 
     {{ if .OutputFormats.Get "RSS" }}
     <li class="pure-menu-item">
-      <a class="pure-menu-link" href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}'><i
-          class="fas fa-rss fa-fw"></i>RSS</a>
+      <a class="pure-menu-link" href='{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}'><i class="fas fa-rss fa-fw"></i>RSS</a>
     </li>
     {{ end }}
 
@@ -151,6 +150,12 @@
     {{ end }}
 
     <!-- Gaming -->
+
+    {{ with .Site.Social.discord }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="{{ . }}" rel="me" target="_blank"><i class="fas fa-gamepad fa-fw"></i>Discord</a>
+    </li>
+    {{ end }}
 
     {{ with .Site.Social.steam }}
     <li class="pure-menu-item">
