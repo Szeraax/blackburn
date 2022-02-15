@@ -8,14 +8,18 @@
 
   {{ partial "post_meta.html" . }}
 
+  {{ if .Params.toc }}
+  {{ .TableOfContents }}
+  {{ end }}
+
   {{ .Content }}
-  
+
   {{ partial "share.html" . }}
 
   {{ partial "prev_next_post.html" . }}
-  
+
   {{ partial "commento.html" . }}
-  
+
   {{ partial "disqus.html" . }}
 
   {{ partial "telegram.html" . }}
