@@ -151,6 +151,12 @@
 
     <!-- Gaming -->
 
+    {{ with .Site.Social.slack }}
+    <li class="pure-menu-item">
+      <a class="pure-menu-link" href="javascript:alert('Slack Connect ID\n\n{{ . }}')" rel="me" target="_self"><i class="fab fa-slack fa-fw"></i>Slack Connect</a>
+    </li>
+    {{ end }}
+
     {{ with .Site.Social.discord }}
     <li class="pure-menu-item">
       <a class="pure-menu-link" href="{{ . }}" rel="me" target="_blank"><i class="fas fa-gamepad fa-fw"></i>Discord</a>
