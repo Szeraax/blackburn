@@ -52,7 +52,7 @@
   {{ range $.Site.Params.highlightjs_extra_languages }}
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/languages/{{ . }}.min.js"></script>
   {{ end }}
-  <script defer>window.onload = (event) => { hljs.highlightAll(); }</script>
+  <script defer>window.onload = (event) => { hljs.configure({ cssSelector: 'code' }); hljs.highlightAll(); }</script>
   {{ end }}
 
   {{ partial "favicon.html" . }}
