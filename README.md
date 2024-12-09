@@ -73,7 +73,9 @@ author = "Your name"
 # Shown in the side menu
 copyright = "&copy; 2016. All rights reserved."
 canonifyurls = true
-paginate = 10
+
+[pagination]
+pagerSize = 10
 
 [indexes]
   tag = "tags"
