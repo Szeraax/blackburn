@@ -126,7 +126,7 @@ pagerSize = 10
     weight = 4
     url = "/contact/"
 
-[social]
+[params.social]
   # Link your social networking accounts to the side menu
   # by entering your username or ID.
 
